@@ -1,2 +1,2 @@
 # Keylogger-Python
-A Keylogger that I made for a prank
+A Keylogger I made because of boredom and pure curiosity. This is for "Educational Purposes" only and not meant for illegal use
