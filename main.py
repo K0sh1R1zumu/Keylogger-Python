@@ -35,6 +35,8 @@ def logger():
                 event.name = "\n <- \n "
             elif event.name == 'decimal':
                 event.name = '.'
+            elif event.name == 'enter':
+                event.name = '\n'
             elif event.name in function_key:
                 event.name = '\n function_key called \n'
             elif event.name in un_required:
